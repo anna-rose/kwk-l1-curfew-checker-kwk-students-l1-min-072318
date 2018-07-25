@@ -1,8 +1,10 @@
 def simple_curfew_checker(time)
   if time > 11
     puts "You're in trouble"
-  else time == 11
+  elsif  time == 11
     puts "You're in trouble"
+  else 
+    puts "nil"
   end 
 end 
 
@@ -53,7 +55,7 @@ deluxe_curfew_checker(11)
 deluxe_curfew_checker(13)
 
 def platinum_curfew_checker(current_time, curfew_time = 11)
-  if time == 11
+  if time - curfew == 0
     puts "You're in trouble"
   elsif time > 11
     puts "You're in trouble"
