@@ -55,12 +55,12 @@ deluxe_curfew_checker(11)
 deluxe_curfew_checker(13)
 
 def platinum_curfew_checker(current_time, curfew_time = 11)
-  if time - curfew == 0
+  if current_time - curfew_time == 0
     puts "You're in trouble"
-  elsif time > 11
+  elsif current_time > 11
     puts "You're in trouble"
-  else time < curfew 
-    puts "You can keep having fun. You have #{curfew - time} hours left."
+  else current_time < curfew_time
+    puts "You can keep having fun. You have #{curfew_time - current_time} hours left."
   end
 end 
 
