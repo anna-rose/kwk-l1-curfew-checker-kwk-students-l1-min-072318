@@ -4,6 +4,10 @@ def simple_curfew_checker(time)
   end 
 end 
 
+simple_curfew_checker(8)
+simple_curfew_checker(11)
+simple_curfew_checker(13)
+
 def curfew_checker(time)
   if time > 11
     puts "Past Curfew!"
@@ -11,6 +15,10 @@ def curfew_checker(time)
     puts "Keep having fun!"
   end
 end 
+
+curfew_checker(8)
+curfew_checker(11)
+curfew_checker(13)
 
 def complex_curfew_checker(time)
 if time > 11 
@@ -42,4 +50,9 @@ deluxe_curfew_checker(13)
 
 def platinum_curfew_checker(current_time, curfew_time)
   # code goes here
-end
+  end
+end 
+
+platinum_curfew_checker(8)
+platinum_curfew_checker(11)
+platinum_curfew_checker(13)
