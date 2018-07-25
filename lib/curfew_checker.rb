@@ -49,7 +49,12 @@ deluxe_curfew_checker(11)
 deluxe_curfew_checker(13)
 
 def platinum_curfew_checker(current_time, curfew_time)
-  # code goes here
+  if 
+    puts 
+  elsif 
+    puts
+  else 
+    puts
   end
 end 
 
