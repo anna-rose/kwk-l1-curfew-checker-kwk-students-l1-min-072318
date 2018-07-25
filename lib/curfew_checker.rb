@@ -2,9 +2,9 @@ def simple_curfew_checker(time)
   if time > 11
     return "You're in trouble"
   elsif  time == 11
-    puts "You're in trouble"
+    return "You're in trouble"
   else 
-    puts "nil"
+    return "nil"
   end 
 end 
 
@@ -14,7 +14,7 @@ simple_curfew_checker(13)
 
 def curfew_checker(time)
   if time > 11
-    puts "You're in trouble"
+    return "You're in trouble"
   elsif time < 11
     puts "You can Keep having fun"
   else time == 11 
