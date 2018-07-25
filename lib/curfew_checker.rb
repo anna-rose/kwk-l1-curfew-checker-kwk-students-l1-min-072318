@@ -1,14 +1,9 @@
 def simple_curfew_checker(time)
-  if time > 11
+  if time >= 11
     return "You're in trouble"
-  elsif  time == 11
-    return "You're in trouble"
-  else 
-    return "nil"
   end 
 end 
 
-simple_curfew_checker(8)
 simple_curfew_checker(11)
 simple_curfew_checker(13)
 
@@ -54,7 +49,7 @@ deluxe_curfew_checker(8)
 deluxe_curfew_checker(11)
 deluxe_curfew_checker(13)
 
-def platinum_curfew_checker(current_time, curfew_time = 11)
+def platinum_curfew_checker(current_time, curfew_time)
   if current_time - curfew_time == 0
     return "You're in trouble"
   elsif current_time > 11
@@ -64,6 +59,6 @@ def platinum_curfew_checker(current_time, curfew_time = 11)
   end
 end 
 
-platinum_curfew_checker(9)
-platinum_curfew_checker(11)
-platinum_curfew_checker(13)
+platinum_curfew_checker(9, 11)
+platinum_curfew_checker(11, 11)
+platinum_curfew_checker(13, 11)
