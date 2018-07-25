@@ -16,9 +16,9 @@ def curfew_checker(time)
   if time > 11
     return "You're in trouble"
   elsif time < 11
-    puts "You can Keep having fun"
+    return "You can Keep having fun"
   else time == 11 
-    puts "You're in trouble"
+    return "You're in trouble"
   end
 end 
 
@@ -28,11 +28,11 @@ curfew_checker(13)
 
 def complex_curfew_checker(time)
 if time > 11 
-    puts "You're in trouble"
+    return "You're in trouble"
   elsif time ==11
-    puts "You're in trouble"
+    return "You're in trouble"
   else 
-    puts "You can keep having fun"
+    return "You can keep having fun"
   end
 end
 
@@ -42,11 +42,11 @@ complex_curfew_checker(12)
 
 def deluxe_curfew_checker(time, curfew = 11)
   if time < curfew
-    puts "You can keep having fun. You have #{curfew - time} hours left."
+    return "You can keep having fun. You have #{curfew - time} hours left."
   elsif time - curfew == 0 
-    puts "Time to apparate"
+    return "Time to apparate"
   else time > curfew 
-    puts "You're in trouble"
+    return "You're in trouble"
   end 
 end
 
@@ -56,11 +56,11 @@ deluxe_curfew_checker(13)
 
 def platinum_curfew_checker(current_time, curfew_time = 11)
   if current_time - curfew_time == 0
-    puts "You're in trouble"
+    return "You're in trouble"
   elsif current_time > 11
-    puts "You're in trouble"
+    return "You're in trouble"
   else current_time < curfew_time
-    puts "You can keep having fun. You have #{curfew_time - current_time} hours left."
+    return "You can keep having fun. You have #{curfew_time - current_time} hours left."
   end
 end 
 
